@@ -13,8 +13,8 @@
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', sans-serif;
-      color: #1a1a1a;
-      background: #fafafa;
+      color: #2C1810;
+      background: #FEFCF8;
       line-height: 1.6;
     }
     a { text-decoration: none; color: inherit; }
@@ -44,13 +44,13 @@
       display: block;
       width: 60px;
       height: 4px;
-      background: #FF6B6B;
+      background: #D4786A;
       margin: 12px auto 0;
       border-radius: 2px;
     }
     .section-subtitle {
       text-align: center;
-      color: #666;
+      color: #8B7D72;
       font-size: 1.05rem;
       margin-top: -32px;
       margin-bottom: 48px;
@@ -62,12 +62,12 @@
       top: 0;
       left: 0;
       right: 0;
-      background: rgba(255,255,255,0.92);
+      background: rgba(254,252,248,0.92);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       z-index: 100;
-      border-bottom: 1px solid #eee;
-      height: 64px;
+      border-bottom: 1px solid #E8DDD4;
+      height: 88px;
       display: flex;
       align-items: center;
     }
@@ -77,12 +77,8 @@
       align-items: center;
       width: 100%;
     }
-    .nav-logo {
-      font-family: 'Lora', serif;
-      font-weight: 700;
-      font-size: 1.3rem;
-      color: #00897A;
-    }
+    .nav-logo { display: flex; align-items: center; }
+    .nav-logo img { height: 76px; width: auto; }
     .nav-links {
       display: flex;
       gap: 28px;
@@ -90,10 +86,10 @@
       font-weight: 500;
     }
     .nav-links a { transition: color 0.2s; }
-    .nav-links a:hover { color: #FF6B6B; }
+    .nav-links a:hover { color: #D4786A; }
     .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
     .hamburger span {
-      width: 26px; height: 3px; background: #333; border-radius: 2px;
+      width: 26px; height: 3px; background: #2C1810; border-radius: 2px;
       transition: 0.3s;
     }
 
@@ -116,18 +112,11 @@
       object-fit: cover;
       z-index: 0;
     }
-    .hero-overlay {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.45);
-      z-index: 1;
-    }
-    .hero > *:not(.hero-bg):not(.hero-overlay) {
+    .hero > *:not(.hero-bg) {
       position: relative;
       z-index: 2;
     }
-    .hero h1 { margin-bottom: 16px; }
+    .hero h1 { margin-bottom: 16px; text-shadow: 0 2px 20px rgba(0,0,0,0.5); }
     .hero p {
       font-size: clamp(1rem, 2vw, 1.25rem);
       max-width: 600px;
@@ -145,16 +134,16 @@
       border: none;
     }
     .btn-primary {
-      background: #FF6B6B;
+      background: #D4786A;
       color: #fff;
     }
-    .btn-primary:hover { background: #e05555; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(255,107,107,0.35); }
+    .btn-primary:hover { background: #c0685a; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(212,120,106,0.35); }
     .btn-outline {
       background: transparent;
       color: #fff;
       border: 2px solid #fff;
     }
-    .btn-outline:hover { background: #fff; color: #1a1a1a; }
+    .btn-outline:hover { background: #fff; color: #2C1810; }
 
     /* ---------- Sections common ---------- */
     section { padding: 80px 0; }
@@ -174,11 +163,11 @@
       object-fit: cover;
       box-shadow: 0 8px 30px rgba(0,0,0,0.1);
     }
-    .about-text p { margin-bottom: 16px; color: #444; }
+    .about-text p { margin-bottom: 16px; color: #5C4F44; }
     .badge {
       display: inline-block;
-      background: #e0f2f1;
-      color: #00897A;
+      background: #E8F2F0;
+      color: #4A7D7A;
       padding: 4px 14px;
       border-radius: 20px;
       font-size: 0.8rem;
@@ -200,15 +189,15 @@
       text-align: center;
       box-shadow: 0 4px 20px rgba(0,0,0,0.06);
       transition: 0.3s;
-      border: 1px solid #f0f0f0;
+      border: 1px solid #E8DDD4;
     }
     .service-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0,0,0,0.1); }
     .service-card .icon {
       font-size: 2.5rem;
       margin-bottom: 16px;
     }
-    .service-card h3 { color: #00897A; }
-    .service-card p { font-size: 0.9rem; color: #666; }
+    .service-card h3 { color: #4A7D7A; }
+    .service-card p { font-size: 0.9rem; color: #8B7D72; }
 
     /* ---------- Testimonials ---------- */
     .testimonials-grid {
@@ -217,19 +206,19 @@
       gap: 28px;
     }
     .testimonial-card {
-      background: #f9f9f9;
+      background: #F8F3ED;
       border-radius: 16px;
       padding: 32px 24px;
-      border: 1px solid #eee;
+      border: 1px solid #E8DDD4;
     }
-    .testimonial-card .stars { color: #FF6B6B; font-size: 1.1rem; margin-bottom: 12px; }
-    .testimonial-card p { font-style: italic; color: #555; margin-bottom: 20px; font-size: 0.95rem; }
+    .testimonial-card .stars { color: #D4786A; font-size: 1.1rem; margin-bottom: 12px; }
+    .testimonial-card p { font-style: italic; color: #5C4F44; margin-bottom: 20px; font-size: 0.95rem; }
     .testimonial-author { display: flex; align-items: center; gap: 12px; }
     .testimonial-author img {
       width: 48px; height: 48px; border-radius: 50%; object-fit: cover;
     }
     .testimonial-author strong { font-size: 0.9rem; display: block; }
-    .testimonial-author span { font-size: 0.8rem; color: #888; }
+    .testimonial-author span { font-size: 0.8rem; color: #8B7D72; }
 
     /* ---------- Contact ---------- */
     .contact-wrapper {
@@ -238,51 +227,51 @@
       gap: 48px;
     }
     .contact-info h4 { font-size: 1.1rem; margin-bottom: 12px; }
-    .contact-info p { color: #555; margin-bottom: 20px; font-size: 0.95rem; }
-    .contact-info a { color: #00897A; font-weight: 500; }
+    .contact-info p { color: #5C4F44; margin-bottom: 20px; font-size: 0.95rem; }
+    .contact-info a { color: #4A7D7A; font-weight: 500; }
     .contact-info a:hover { text-decoration: underline; }
     .contact-form input,
     .contact-form textarea {
       width: 100%;
       padding: 14px 16px;
-      border: 1px solid #ddd;
+      border: 1px solid #E8DDD4;
       border-radius: 10px;
       font-family: 'Inter', sans-serif;
       font-size: 0.95rem;
       margin-bottom: 16px;
       transition: 0.2s;
-      background: #fafafa;
+      background: #FEFCF8;
     }
     .contact-form input:focus,
     .contact-form textarea:focus {
       outline: none;
-      border-color: #00897A;
+      border-color: #4A7D7A;
       background: #fff;
-      box-shadow: 0 0 0 3px rgba(0,137,122,0.15);
+      box-shadow: 0 0 0 3px rgba(74,125,122,0.15);
     }
     .contact-form textarea { min-height: 120px; resize: vertical; }
 
     /* ---------- Footer ---------- */
     footer {
-      background: #1a1a1a;
-      color: #aaa;
+      background: #2C1810;
+      color: #A09387;
       text-align: center;
       padding: 32px 24px;
       font-size: 0.85rem;
     }
-    footer a { color: #FF6B6B; }
+    footer a { color: #D4786A; }
 
     /* ---------- Responsive ---------- */
     @media (max-width: 768px) {
       .nav-links {
         display: none;
         position: absolute;
-        top: 64px;
+        top: 88px;
         left: 0; right: 0;
         background: #fff;
         flex-direction: column;
         padding: 20px 24px;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #E8DDD4;
         gap: 16px;
       }
       .nav-links.open { display: flex; }
@@ -298,7 +287,7 @@
   <!-- ============ NAV ============ -->
   <nav>
     <div class="container">
-      <a href="#" class="nav-logo">Jeannely</a>
+      <a href="#" class="nav-logo"><img src="images/Logo final.png" alt="Jeannely" /></a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">Sobre mí</a></li>
         <li><a href="#services">Servicios</a></li>
@@ -314,7 +303,6 @@
   <!-- ============ HERO ============ -->
   <section class="hero" id="home">
     <img class="hero-bg" src="images/hero-bg.jpg" alt="" aria-hidden="true" />
-    <div class="hero-overlay"></div>
     <div>
       <h1>Aprende Español con Jeannely</h1>
       <p>Clases dinámicas y personalizadas para todos los niveles. Descubre la riqueza del idioma español desde la primera clase.</p>
@@ -336,16 +324,14 @@
         <div class="about-text">
           <h3>Jeannely — Profesora de Español</h3>
           <p>
-            Soy profesora de español con más de 8 años de experiencia enseñando a estudiantes de todas las edades y nacionalidades. Mi pasión es compartir no solo el idioma, sino también la cultura hispanohablante.
+            Soy comunicadora social y profesora de español, y mi camino me ha llevado por varios países, ¡una experiencia internacional increíble! Me apasiona el lenguaje, la riqueza de las culturas y, sobre todo, conectar con la gente a través del español.
           </p>
           <p>
-            Mis clases son dinámicas, comunicativas y adaptadas a tus objetivos: ya sea viajar, trabajar, estudiar o simplemente disfrutar del idioma.
+            Mis clases son dinámicas, comunicativas y se adaptan totalmente a lo que tú necesitas: ya sea que quieras viajar, mejorar en el trabajo, estudiar o simplemente disfrutar de la aventura de aprender un nuevo idioma. Mi objetivo es que te sientas a gusto, motivado/a y que disfrutes cada paso de este viaje lingüístico. ¡Vamos a aprender juntos de una forma divertida y efectiva!
           </p>
           <div>
-            <span class="badge">+8 años experiencia</span>
-            <span class="badge">Certificada ELE</span>
-            <span class="badge">Habla 4 idiomas</span>
-            <span class="badge">+500 estudiantes</span>
+            <span class="badge">+2 años experiencia</span>
+            <span class="badge">Habla 2 idiomas</span>
           </div>
         </div>
       </div>
@@ -433,16 +419,16 @@
       <div class="contact-wrapper">
         <div class="contact-info">
           <h4>📧 Correo electrónico</h4>
-          <p><a href="mailto:jeannely@example.com">jeannely@example.com</a></p>
+          <p><a href="mailto:jeanconectaes@gmail.com">jeanconectaes@gmail.com</a></p>
 
           <h4>📱 WhatsApp</h4>
-          <p><a href="https://wa.me/521234567890" target="_blank">+52 123 456 7890</a></p>
+          <p><a href="https://wa.me/995511102764" target="_blank">+995 511 102 764</a></p>
 
           <h4>📍 Modalidad</h4>
           <p>Clases online por Zoom / Google Meet — Horarios flexibles</p>
 
           <h4>⏰ Horarios</h4>
-          <p>Lunes a viernes de 8:00 a 20:00 hs (GMT-6)</p>
+          <p>Lunes a viernes de 8:00 a 20:00 hs (Tbilisi, UTC+4)</p>
         </div>
         <form class="contact-form" onsubmit="event.preventDefault(); alert('¡Gracias por tu mensaje! Te responderé pronto.');">
           <input type="text" placeholder="Nombre completo" required />
