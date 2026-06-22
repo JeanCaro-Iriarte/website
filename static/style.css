@@ -322,7 +322,7 @@ section:nth-child(even) { background: #fff; }
 .blog-list .blog-row {
   display: flex;
   gap: 24px;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 .blog-list-img { flex-shrink: 0; }
 .blog-list-img img {
