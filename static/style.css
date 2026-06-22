@@ -344,7 +344,7 @@ section:nth-child(even) { background: #fff; }
 .blog-post .content ul, .blog-post .content ol { margin-bottom: 16px; padding-left: 24px; }
 .blog-post .content li { margin-bottom: 16px; }
 .blog-post .content img { max-width: 100%; height: auto; border-radius: 8px; margin: 16px 0; }
-.blog-post .content li img { max-width: 120px; border-radius: 6px; margin: 8px 0; }
+.blog-post .content li img { max-width: 120px; border-radius: 6px; margin: 8px 0; vertical-align: middle; }
 
 /* ---------- Footer ---------- */
 footer {
