@@ -13,7 +13,7 @@ El español es el idioma oficial de 21 países y es hablado en los 5 continentes
 
 ## El español en cifras (2025)
 
-![Mapa de los países hispanohablantes en el mundo](/images/blog/mapa-hispanohablantes.png)
+{{ img(path="/images/blog/mapa-hispanohablantes.png", alt="Mapa de los países hispanohablantes en el mundo") }}
 
 Según el informe *"El español en el mundo 2025"* del Instituto Cervantes, las cifras son impresionantes:
 
@@ -53,19 +53,19 @@ El español tiene una pronunciación muy fonética — se lee como se escribe �
 La literatura en español ha dado al mundo algunos de los escritores más importantes de la historia:
 
 - **Miguel de Cervantes** (1547-1616) — Autor de *Don Quijote de la Mancha*, considerada la primera novela moderna y la obra más importante de la literatura en español. Es, además, el libro más traducido después de la Biblia.
-  ![Miguel de Cervantes](/images/blog/cervantes.jpg)
+  {{ img(path="/images/blog/cervantes.jpg", alt="Miguel de Cervantes") }}
 - **Gabriel García Márquez** (1927-2014) — Premio Nobel de Literatura colombiano, padre del realismo mágico y autor de *Cien años de soledad*.
-  ![Gabriel García Márquez](/images/blog/garcia-marquez.jpg)
+  {{ img(path="/images/blog/garcia-marquez.jpg", alt="Gabriel García Márquez") }}
 - **Jorge Luis Borges** (1899-1986) — Escritor argentino, considerado una de las figuras más influyentes de la literatura universal.
-  ![Jorge Luis Borges](/images/blog/borges.jpg)
+  {{ img(path="/images/blog/borges.jpg", alt="Jorge Luis Borges") }}
 - **Pablo Neruda** (1904-1973) — Poeta chileno, Premio Nobel de Literatura, conocido por sus versos apasionados y su compromiso social.
-  ![Pablo Neruda](/images/blog/neruda.jpg)
+  {{ img(path="/images/blog/neruda.jpg", alt="Pablo Neruda") }}
 - **Federico García Lorca** (1898-1936) — Poeta y dramaturgo español, uno de los máximos exponentes de la Generación del 27.
-  ![Federico García Lorca](/images/blog/lorca.jpg)
+  {{ img(path="/images/blog/lorca.jpg", alt="Federico García Lorca") }}
 - **Mario Vargas Llosa** (1936) — Premio Nobel de Literatura peruano-español, autor de obras como *La ciudad y los perros* y *La fiesta del Chivo*.
-  ![Mario Vargas Llosa](/images/blog/vargas-llosa.jpg)
+  {{ img(path="/images/blog/vargas-llosa.jpg", alt="Mario Vargas Llosa") }}
 - **Isabel Allende** (1942) — Escritora chilena, la autora en lengua española más leída del mundo, conocida por *La casa de los espíritus*.
-  ![Isabel Allende](/images/blog/allende.jpg)
+  {{ img(path="/images/blog/allende.jpg", alt="Isabel Allende") }}
 
 Todos ellos y muchos más han contribuido a que el español sea una lengua rica, viva y universal.
 

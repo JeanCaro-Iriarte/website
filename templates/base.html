@@ -8,21 +8,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="{{ get_url(path="/style.css") }}" />
 </head>
 <body>
 
   {% block nav %}
   <nav>
     <div class="container">
-      <a href="/" class="nav-logo"><img src="/images/Logo final.png" alt="Jeannely" /></a>
+      <a href="{{ get_url(path="/") }}" class="nav-logo"><img src="{{ get_url(path="/images/Logo final.png") }}" alt="Jeannely" /></a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="/#about">Sobre m&iacute;</a></li>
-        <li><a href="/#services">Servicios</a></li>
-        <li><a href="/#pricing">Precios</a></li>
-        <li><a href="/#testimonials">Testimonios</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/#contact">Contacto</a></li>
+        <li><a href="{{ get_url(path="/") }}#about">Sobre m&iacute;</a></li>
+        <li><a href="{{ get_url(path="/") }}#services">Servicios</a></li>
+        <li><a href="{{ get_url(path="/") }}#pricing">Precios</a></li>
+        <li><a href="{{ get_url(path="/") }}#testimonials">Testimonios</a></li>
+        <li><a href="{{ get_url(path="/blog") }}">Blog</a></li>
+        <li><a href="{{ get_url(path="/") }}#contact">Contacto</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
         <span></span><span></span><span></span>

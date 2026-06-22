@@ -4,11 +4,11 @@
 
 <!-- HERO -->
 <section class="hero" id="home">
-  <img class="hero-bg" src="/images/hero-bg.jpg" alt="" aria-hidden="true" />
+  <img class="hero-bg" src="{{ get_url(path="/images/hero-bg.jpg") }}" alt="" aria-hidden="true" />
   <div>
     <h1>{{ section.extra.hero_title }}</h1>
     <p>{{ section.extra.hero_subtitle }}</p>
-    <a href="/{{ section.extra.hero_btn_link }}" class="btn btn-primary">{{ section.extra.hero_btn_text }}</a>
+    <a href="{{ get_url(path="/blog") }}" class="btn btn-primary">{{ section.extra.hero_btn_text }}</a>
   </div>
 </section>
 
@@ -17,7 +17,7 @@
   <div class="container">
     <h2 class="section-title">Sobre m&iacute;</h2>
     <div class="about-grid">
-      <img class="about-img" src="/{{ section.extra.about_img }}" alt="Jeannely ense&ntilde;ando espa&ntilde;ol" loading="lazy" />
+      <img class="about-img" src="{{ get_url(path=section.extra.about_img) }}" alt="Jeannely ense&ntilde;ando espa&ntilde;ol" loading="lazy" />
       <div class="about-text">
         <h3>{{ section.extra.about_title }}</h3>
         <p>{{ section.extra.about_p1 }}</p>
@@ -65,7 +65,7 @@
           <li>&check; {{ feature }}</li>
           {% endfor %}
         </ul>
-        <a href="/#contact" class="btn {% if plan.highlight %}btn-primary{% else %}btn-secondary{% endif %}">Elegir plan</a>
+        <a href="{{ get_url(path="/") }}#contact" class="btn {% if plan.highlight %}btn-primary{% else %}btn-secondary{% endif %}">Elegir plan</a>
       </div>
       {% endfor %}
     </div>
@@ -83,7 +83,7 @@
         <div class="stars">★★★★★</div>
         <p>&ldquo;{{ testimonial.text }}&rdquo;</p>
         <div class="testimonial-author">
-          <img src="/{{ testimonial.photo }}" alt="{{ testimonial.name }}" loading="lazy" />
+          <img src="{{ get_url(path=testimonial.photo) }}" alt="{{ testimonial.name }}" loading="lazy" />
           <div>
             <strong>{{ testimonial.name }}</strong>
             <span>{{ testimonial.label }}</span>
