@@ -3,6 +3,7 @@ title = "La Lengua Castellana: Un idioma que conecta el mundo"
 date = 2025-06-20
 description = "Descubre la importancia del español en el mundo: sus orígenes, el número de hablantes, por qué es uno de los idiomas más estudiados y los beneficios de aprender esta fascinante lengua."
 tags = ["cultura", "curiosidades", "historia"]
+extra.image = "/images/blog/mapa-hispanohablantes.png"
 +++
 
 ## ¿Qué es la lengua castellana?
