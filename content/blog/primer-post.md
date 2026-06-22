@@ -3,7 +3,7 @@ title = "La Lengua Castellana: Un idioma que conecta el mundo"
 date = 2025-06-20
 description = "Descubre la importancia del español en el mundo: sus orígenes, el número de hablantes, por qué es uno de los idiomas más estudiados y los beneficios de aprender esta fascinante lengua."
 tags = ["cultura", "curiosidades", "historia"]
-extra.image = "/images/blog/mapa-hispanohablantes.png"
+extra.image = "/images/blog/bandera-espana.jpg"
 +++
 
 ## ¿Qué es la lengua castellana?
@@ -14,7 +14,7 @@ El español es el idioma oficial de 21 países y es hablado en los 5 continentes
 
 ## El español en cifras (2025)
 
-{{ img(path="/images/blog/mapa-hispanohablantes.png", alt="Mapa de los países hispanohablantes en el mundo") }}
+{{ img(path="/images/blog/bandera-espana.jpg", alt="Bandera de España ondeando contra el cielo") }}
 
 Según el informe *"El español en el mundo 2025"* del Instituto Cervantes, las cifras son impresionantes:
 
