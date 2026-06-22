@@ -53,25 +53,25 @@ photo = "images/testimonial-sarah.jpg"
 
 [[extra.pricing]]
 name = "Clase Individual"
-price = "15€"
+price = "25€"
 per = "/ hora"
-description = "Perfecta para probar o para sesiones esporádicas"
-features = ["Clase de 60 min", "Material digital incluido", "Sin compromiso", "Pago por clase"]
+description = "Perfecta para sesiones esporádicas o evaluar tu nivel"
+features = ["Clase de 60 min totalmente personalizada", "Material digital dinámico incluido", "Sin compromisos ni mensualidades", "Pago por sesión"]
 highlight = false
 
 [[extra.pricing]]
-name = "Pack 8 Clases"
-price = "110€"
+name = "Pack Mensual"
+price = "176€"
 per = "/ mes"
-description = "Lo más popular — 8 clases al mes"
-features = ["8 clases de 60 min", "Material digital incluido", "Flexibilidad horaria", "Seguimiento por WhatsApp"]
+description = "Lo más popular — 8 clases al mes (2 clases por semana)"
+features = ["8 clases de 60 min enfocadas en tus objetivos", "Material digital y lecturas incluidas", "Soporte de dudas por WhatsApp (L-V)", "Flexibilidad horaria (Cancelación con 24h de antelación)", "Ahorras 24€ al mes vs. clases individuales"]
 highlight = true
 
 [[extra.pricing]]
-name = "Pack 3 Meses"
-price = "350€"
+name = "Pack Trimestral"
+price = "480€"
 per = "/ 3 meses"
 description = "Máximo progreso — 24 clases en total"
-features = ["24 clases de 60 min", "Material digital incluido", "Flexibilidad horaria", "Seguimiento por WhatsApp", "Corrección de tareas", "Ahorro de 30€"]
+features = ["24 clases de 60 min (Planificación a medio plazo)", "Material digital personalizado + Acceso a recursos extra", "Soporte prioritario por WhatsApp (L-V)", "Corrección y feedback detallado de tareas", "Flexibilidad horaria para agendar tus sesiones", "Mejor precio por hora (20€/h). Ahorras 120€ en total"]
 highlight = false
 +++
