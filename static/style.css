@@ -277,6 +277,7 @@ section:nth-child(even) { background: #fff; }
 .contact-form textarea { min-height: 120px; resize: vertical; }
 
 /* ---------- Blog ---------- */
+.blog-hero .section-subtitle { margin-top: 0; margin-bottom: 0; }
 .blog-hero {
   padding: 140px 0 60px;
   text-align: center;
