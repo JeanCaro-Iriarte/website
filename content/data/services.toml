@@ -1,0 +1,19 @@
+[[service]]
+icon = "🗣️"
+title = "Conversación"
+description = "Mejora tu fluidez y pronunciación con temas de tu interés. Ideal para niveles intermedios y avanzados."
+
+[[service]]
+icon = "📚"
+title = "Gramática y Escritura"
+description = "Domina las reglas del español y exprésate por escrito con claridad y precisión."
+
+[[service]]
+icon = "🎯"
+title = "Preparación DELE"
+description = "Prepárate para el examen oficial DELE con simulacros, ejercicios y retroalimentación personalizada."
+
+[[service]]
+icon = "💼"
+title = "Español de Negocios"
+description = "Vocabulario y habilidades profesionales para desenvolverte en entornos laborales hispanohablantes."

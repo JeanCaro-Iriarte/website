@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <img class="hero-bg" src="/images/hero-bg.jpg" alt="" aria-hidden="true" />
+  <div>
+    <h1>{{ section.extra.hero_title }}</h1>
+    <p>{{ section.extra.hero_subtitle }}</p>
+    <a href="/{{ section.extra.hero_btn_link }}" class="btn btn-primary">{{ section.extra.hero_btn_text }}</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title">Sobre m&iacute;</h2>
+    <div class="about-grid">
+      <img class="about-img" src="/{{ section.extra.about_img }}" alt="Jeannely ense&ntilde;ando espa&ntilde;ol" loading="lazy" />
+      <div class="about-text">
+        <h3>{{ section.extra.about_title }}</h3>
+        <p>{{ section.extra.about_p1 }}</p>
+        <p>{{ section.extra.about_p2 }}</p>
+        <div>
+          {% for badge in section.extra.badges %}
+          <span class="badge">{{ badge }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <h2 class="section-title">Servicios</h2>
+    <p class="section-subtitle">Elige el programa que mejor se adapte a ti</p>
+    <div class="services-grid">
+      {% for service in section.extra.services %}
+      <div class="service-card">
+        <div class="icon">{{ service.icon }}</div>
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <div class="container">
+    <h2 class="section-title">Precios</h2>
+    <p class="section-subtitle">Elige el plan perfecto para ti</p>
+    <div class="pricing-grid">
+      {% for plan in section.extra.pricing %}
+      <div class="pricing-card{% if plan.highlight %} pricing-highlight{% endif %}">
+        <h3>{{ plan.name }}</h3>
+        <div class="price">{{ plan.price }}<span>{{ plan.per }}</span></div>
+        <p class="price-desc">{{ plan.description }}</p>
+        <ul>
+          {% for feature in plan.features %}
+          <li>&check; {{ feature }}</li>
+          {% endfor %}
+        </ul>
+        <a href="/#contact" class="btn {% if plan.highlight %}btn-primary{% else %}btn-secondary{% endif %}">Elegir plan</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <h2 class="section-title">Testimonios</h2>
+    <p class="section-subtitle">Lo que dicen mis estudiantes</p>
+    <div class="testimonials-grid">
+      {% for testimonial in section.extra.testimonials %}
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p>&ldquo;{{ testimonial.text }}&rdquo;</p>
+        <div class="testimonial-author">
+          <img src="/{{ testimonial.photo }}" alt="{{ testimonial.name }}" loading="lazy" />
+          <div>
+            <strong>{{ testimonial.name }}</strong>
+            <span>{{ testimonial.label }}</span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Contacto</h2>
+    <p class="section-subtitle">&iexcl;La primera clase es gratis! Escr&iacute;beme y empecemos</p>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h4>&#128231; Correo electr&oacute;nico</h4>
+        <p><a href="mailto:jeanconectaes@gmail.com">jeanconectaes@gmail.com</a></p>
+
+        <h4>&#128241; WhatsApp</h4>
+        <p><a href="https://wa.me/995511102764" target="_blank">+995 511 102 764</a></p>
+
+        <h4>&#128205; Modalidad</h4>
+        <p>Clases online por Zoom / Google Meet &mdash; Horarios flexibles</p>
+
+        <h4>&#9200; Horarios</h4>
+        <p>Lunes a viernes de 8:00 a 20:00 hs (Tbilisi, UTC+4)</p>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/xxx" method="POST">
+        <input type="text" name="name" placeholder="Nombre completo" required />
+        <input type="email" name="email" placeholder="Correo electr&oacute;nico" required />
+        <input type="text" name="level" placeholder="Nivel de espa&ntilde;ol (principiante / intermedio / avanzado)" />
+        <textarea name="message" placeholder="Cu&eacute;ntame sobre tus objetivos..." required></textarea>
+        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

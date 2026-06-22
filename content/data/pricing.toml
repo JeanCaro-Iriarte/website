@@ -1,0 +1,38 @@
+[[plan]]
+name = "1 Clase Suelta"
+price = "$15"
+per = "/ clase"
+description = "Perfecta para probar"
+features = [
+  "Clase de 60 min",
+  "Material digital incluido",
+  "Sin compromiso",
+]
+highlight = false
+
+[[plan]]
+name = "Pack 4 Clases"
+price = "$50"
+per = "/ mes"
+description = "Lo más popular"
+features = [
+  "4 clases de 60 min",
+  "Material digital incluido",
+  "Flexibilidad horaria",
+  "Seguimiento por WhatsApp",
+]
+highlight = true
+
+[[plan]]
+name = "Pack 8 Clases"
+price = "$90"
+per = "/ mes"
+description = "Máximo progreso"
+features = [
+  "8 clases de 60 min",
+  "Material digital incluido",
+  "Flexibilidad horaria",
+  "Seguimiento por WhatsApp",
+  "Corrección de tareas",
+]
+highlight = false

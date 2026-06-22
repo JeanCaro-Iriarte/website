@@ -1,0 +1,9 @@
+base_url = "https://jeannely-spanish.com"
+title = "Jeannely — Aprende Español"
+default_language = "es"
+build_search_index = false
+
+
+
+[extra]
+author = "Jeannely Iriarte"

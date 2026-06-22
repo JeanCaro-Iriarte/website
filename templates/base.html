@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Jeannely &mdash; Aprende Español{% endblock %}</title>
+  <meta name="description" content="{% block description %}Clases de español dinámicas y personalizadas para todos los niveles. Aprende español con Jeannely.{% endblock %}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  {% block nav %}
+  <nav>
+    <div class="container">
+      <a href="/" class="nav-logo"><img src="/images/Logo final.png" alt="Jeannely" /></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/#about">Sobre m&iacute;</a></li>
+        <li><a href="/#services">Servicios</a></li>
+        <li><a href="/#pricing">Precios</a></li>
+        <li><a href="/#testimonials">Testimonios</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/#contact">Contacto</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+  {% endblock %}
+
+  <main>
+  {% block content %}{% endblock %}
+  </main>
+
+  {% block footer %}
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Jeannely &mdash; Aprende Espa&ntilde;ol. Todos los derechos reservados.</p>
+      <p style="margin-top: 6px;">Hecho con ❤️ para mis estudiantes</p>
+    </div>
+  </footer>
+  {% endblock %}
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+      });
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => navLinks.classList.remove('open'));
+      });
+    }
+  </script>
+</body>
+</html>

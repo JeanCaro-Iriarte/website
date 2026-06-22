@@ -1,0 +1,17 @@
+[[testimonial]]
+name = "María G."
+label = "Estudiante hace 6 meses"
+text = "Jeannely es una profesora increíble. Sus clases son muy dinámicas y siempre está atenta a mis necesidades. He mejorado mucho mi confianza al hablar."
+photo = "images/testimonial-maria.jpg"
+
+[[testimonial]]
+name = "Carlos M."
+label = "Aprobé DELE B2"
+text = "Tomé clases de preparación DELE con Jeannely y aprobé con B2. Su método es muy estructurado y los simulacros me ayudaron muchísimo."
+photo = "images/testimonial-carlos.jpg"
+
+[[testimonial]]
+name = "Sarah K."
+label = "Estudiante hace 3 meses"
+text = "Las clases con Jeannely son divertidas y muy prácticas. En pocos meses pasé de no saber nada a mantener conversaciones cotidianas."
+photo = "images/testimonial-sarah.jpg"

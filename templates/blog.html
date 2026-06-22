@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Blog &mdash; Jeannely{% endblock %}
+
+{% block content %}
+
+<section class="blog-hero">
+  <div class="container">
+    <h1>Blog</h1>
+    <p class="section-subtitle">Consejos, recursos y reflexiones para aprender espa&ntilde;ol</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="blog-list">
+      {% for page in section.pages %}
+      <article>
+        <time datetime="{{ page.date }}">{{ page.date }}</time>
+        <h3><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
+        {% if page.description %}
+        <p>{{ page.description }}</p>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}
